@@ -1,44 +1,24 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../css/section.css';
-import {
-    Row,
-    Col
-} from 'reactstrap';
 import ScratchCard from 'react-scratchcard';
 
 
 const ScratchCardSection = (props)=>{
 
     const settings = {
-        image:'https://i.imgur.com/7iIDXXr.jpg',
+        height:300,
+        width:300,
+        image:'https://cdn.shopify.com/s/files/1/0153/0623/products/BW_Striped_Wallpaper_in_Ivory_design_by_BD_Wall_7dc80d01-d0b8-4f49-8288-d86522480399_large.jpg?v=1571709614',
         finishPercent:50,
         onComplete: ()=> console.log('Done') 
     };
     
 
-    return(
-        <div className="section-body">
-            <div className="h-100 w-100 d-inline-block" style={{backgroundColor:"rgba(255,0,0)"}}>
-                <Row style={{marginTop:'10%',alignContent:"center",justifyItems:"center"}}>
-                    <Col>
-                        <ScratchCard {...settings}>
-                            <img src="https://i.imgur.com/7iIDXXr.jpg" alt="I am batman" style={{maxHeight:"100%",maxWidth:"100%"}}></img>
-                        </ScratchCard>
-                    </Col>
-                    <Col>
-                        <ScratchCard {...settings}>
-                            <img src="https://i.imgur.com/7iIDXXr.jpg" alt="I am batman" style={{maxHeight:"100%",maxWidth:"100%"}}></img>                            
-                        </ScratchCard>
-                    </Col>
-                    <Col>
-                        <ScratchCard {...settings}>
-                            <img src="https://i.imgur.com/7iIDXXr.jpg" alt="I am batman" style={{maxHeight:"100%",maxWidth:"100%"}}></img>                            
-                        </ScratchCard>
-                    </Col>
-                </Row>
-            </div>
-        </div>
+    return(        
+        <ScratchCard {...settings}>
+            <img src="https://breakbrunch.com/wp-content/uploads/2016/04/i-am-batman-20160412.jpg" alt="I am batman" style={{maxHeight:"300px",maxWidth:"300px"}}></img>
+        </ScratchCard>
     )
 
 }
