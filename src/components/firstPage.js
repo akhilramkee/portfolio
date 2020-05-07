@@ -12,7 +12,7 @@ const FrontPage = ({props})=>{
 
     return(
         <div style={{height:'100vh',paddingTop:'25vh'}}>
-           <Row style={{border:'2px dashed #FDD529',backgroundColor:'#6203fc',marginLeft:'3%',marginRight:'3%'}}>
+           <Row style={{border:'2px dashed #FDD529',background:'linear-gradient(to right, #d38312, #a83279)',marginLeft:'3%',marginRight:'3%'}}>
                 <Col>
                     <div className="container1">
                         <div className="box">
@@ -38,8 +38,8 @@ const FrontPage = ({props})=>{
                     </Row>
                 </Col>
            </Row>
-           <div class="arrow bounce">
-               <FaChevronDown size={32} onClick={()=>{window.scrollTo({top:window.innerHeight,left:0,behavior:'smooth'});}}/>
+           <div className="arrow bounce">
+               <FaChevronDown size={32} onClick={()=>{window.scrollTo({top:window.innerHeight+100,left:0,behavior:'smooth'});}}/>
             </div>        
         </div>
     );

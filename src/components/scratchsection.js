@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../css/section.css';
 import ScratchCard from 'react-scratchcard';

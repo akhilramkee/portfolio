@@ -6,10 +6,10 @@ import Typography from '@material-ui/core/Typography';
 import ScratchCardSection from './scratchsection';
 import 'typeface-roboto';
 
-
 const useStyles = makeStyles((theme)=>({
 
     root:{
+        height:'100vh',
         marginTop:'5%',
         flexGrow:1,
     },
@@ -18,9 +18,20 @@ const useStyles = makeStyles((theme)=>({
         margin: 'auto',
         maxWidth: 600,
         textAlign:'center',
-        color:'#F4D529',
-        backgroundColor:'#6203fc',
-        boxShadow:'box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);',
+        color:'white',
+        background:'linear-gradient(to right, #d38312, #a83279)',
+        fontFamily:'archia',
+        border:'2px dashed yellow'
+    },
+    paper2:{
+        padding:theme.spacing(2),
+        margin:'auto',
+        textAlign:'center',
+        maxWidth:900,
+        background: 'linear-gradient(to right, #d38312, #a83279)',
+        fontFamily:'archia',
+        color:'white',
+        border:'2px dashed yellow'
     },
     image:{
         width:250,
@@ -42,7 +53,7 @@ export default function About(){
     return(
 
         <div className={classes.root}>
-            <Grid container spacing={4} direction="column" justify="center" alignItems="center">
+            <Grid container spacing={5} direction="column" justify="center" alignItems="center">
                 <Grid item xs={12}>
                     <Paper className={classes.paper}>
                        <Typography variant="h5" gutterBottom>
@@ -56,11 +67,14 @@ export default function About(){
                     </Paper>
                 </Grid>
                 <Grid item xs={12}>
-                                   
+                    <Paper elevation={10} className={classes.paper2}>
+                        <Typography variant="body1" gutterBottom>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </Typography>
+                    </Paper>
                 </Grid>
             </Grid>
         </div>
 
     )
-
 }
