@@ -9,9 +9,10 @@ import 'typeface-roboto';
 const useStyles = makeStyles((theme)=>({
 
     root:{
-        height:'100vh',
+        height:'auto',
         marginTop:'5%',
         flexGrow:1,
+        overflow:'hidden'
     },
     paper:{
         padding: theme.spacing(2),
@@ -21,7 +22,6 @@ const useStyles = makeStyles((theme)=>({
         color:'white',
         background:'linear-gradient(to right, #d38312, #a83279)',
         fontFamily:'archia',
-        border:'2px dashed yellow'
     },
     paper2:{
         padding:theme.spacing(2),
@@ -31,7 +31,6 @@ const useStyles = makeStyles((theme)=>({
         background: 'linear-gradient(to right, #d38312, #a83279)',
         fontFamily:'archia',
         color:'white',
-        border:'2px dashed yellow'
     },
     image:{
         width:250,
@@ -43,6 +42,15 @@ const useStyles = makeStyles((theme)=>({
         maxWidth:'100%',
         maxHeight:'100%',
     },
+    blockquote:{
+        padding:'10px',
+        textAlign:'center',
+        opacity:0.65,
+    },
+    footer:{
+        textAlign:'right',
+        paddingRight:'20%',
+    }
 
 }));
 
@@ -57,7 +65,7 @@ export default function About(){
                 <Grid item xs={12}>
                     <Paper className={classes.paper}>
                        <Typography variant="h5" gutterBottom>
-                              WHO AM I ( SCRATCH TO FIND OUT )
+                              I AM ...
                         </Typography>
                     </Paper>
                 </Grid>
@@ -67,12 +75,30 @@ export default function About(){
                     </Paper>
                 </Grid>
                 <Grid item xs={12}>
-                    <Paper elevation={10} className={classes.paper2}>
+                    <Paper elevation={12} className={classes.paper2}>
                         <Typography variant="body1" gutterBottom>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            <b>Just Kidding!!!! I am Akhilesh. Currently pursuing my <b><i>Software Engineering in PSG College of Technology.</i></b><br />
+                            I am a Full Stack Developer. <i>(Whisphers)...</i> Full Stack Development is real...
+                            <br />
+                            <div className={classes.blockquote}>
+                                <i><b>"Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live."<br/>
+                                    <div className={classes.footer}>
+                                        -Not me    
+                                    </div>    
+                                </b></i>
+                            </div>
+                           I am a Nerd and <br />
+                           <div className={classes.blockquote}>
+                            <i><b>"Not having a life means you get to love things with a passion and nobody bothers you about it."   
+                                <div className={classes.footer}>
+                                    -Not me
+                                </div>
+                            </b></i>
+                           </div>
+                           </b>
                         </Typography>
                     </Paper>
-                </Grid>
+                </Grid> 
             </Grid>
         </div>
 

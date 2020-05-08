@@ -12,7 +12,7 @@ const FrontPage = ({props})=>{
 
     return(
         <div style={{height:'100vh',paddingTop:'25vh'}}>
-           <Row style={{border:'2px dashed #FDD529',background:'linear-gradient(to right, #d38312, #a83279)',marginLeft:'3%',marginRight:'3%'}}>
+           <Row style={{boxShadow:'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',background:'linear-gradient(to right, #d38312, #a83279)',marginLeft:'3%',marginRight:'3%'}}>
                 <Col>
                     <div className="container1">
                         <div className="box">

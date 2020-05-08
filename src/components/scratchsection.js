@@ -17,7 +17,7 @@ const ScratchCardSection = (props)=>{
 
     return(        
         <ScratchCard {...settings}>
-            <img src="https://breakbrunch.com/wp-content/uploads/2016/04/i-am-batman-20160412.jpg" alt="I am batman" style={{maxHeight:"300px",maxWidth:"300px"}}></img>
+            <img src="https://bleedingcool.com/wp-content/uploads/2019/09/black-batman-630x628.jpg" alt="I am batman" style={{maxHeight:"300px",maxWidth:"300px"}}></img>
         </ScratchCard>
     )
 

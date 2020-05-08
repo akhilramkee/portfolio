@@ -14,7 +14,7 @@ class App extends React.Component{
 
   render(){
       return (
-        <div style={{background:'linear-gradient(to right, #642b73, #c6426e)',overflow:'hidden',color:'#F4D529'}}>
+        <div style={{background:'linear-gradient(to right, #6441a5, #2a0845)',color:'#F4D529'}}>
           <Navigation />
           <FrontPage />
           <About />
