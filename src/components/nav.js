@@ -20,7 +20,7 @@ const Navigation = (props)=>{
                     <NavLink href="#">HOME</NavLink>
                     <NavLink href="about">ABOUT</NavLink>
                     <NavLink href="skills">SKILLS</NavLink>
-                    <NavLink href="path">JOURNEY</NavLink>
+                    <NavLink onClick={()=>{window.scrollTo({top:1800,left:0,behavior:'smooth'});}}>JOURNEY</NavLink>
                     <NavLink href="contact">CONTACT</NavLink>
                   </NavItem>
               </Nav>
