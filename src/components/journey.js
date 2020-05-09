@@ -85,7 +85,7 @@ export default function Journey(){
                                 icon={<Work />}
                             >
                                 <h3 className="vertical-timeline-element-title">Summer Analyst Intern</h3>
-                                <h4 className="vertical-timeline-element-subtitle">Goldman Sachs,Bangalore, IN</h4>
+                                <h5 className="vertical-timeline-element-subtitle">Goldman Sachs,Bangalore, IN</h5>
                                 <p>
                                     Started work with the Global Investment Research Division, Goldman Sachs
                                 </p>
@@ -99,7 +99,7 @@ export default function Journey(){
                                 icon={<Work />}
                             >
                                 <h3 className="vertical-timeline-element-title">App Development Intern</h3>
-                                <h4 className="vertical-timeline-element-subtitle">DatOpsys,Remote</h4>
+                                <h5 className="vertical-timeline-element-subtitle">DatOpsys,Remote</h5>
                                 <p>
                                     Helped develop an React Native app for providing news in a shorter span of words
                                 </p>
@@ -114,7 +114,7 @@ export default function Journey(){
                                 icon={<AccountBalanceIcon />}
                             >
                                 <h3 className="vertical-timeline-element-title">Software Engineering Student</h3>
-                                <h4 className="vertical-timeline-element-subtitle">CGPA 9.3,PSG College of Technology</h4>
+                                <h5 className="vertical-timeline-element-subtitle">CGPA 9.3,PSG College of Technology</h5>
                                 <p>
                                     Hit me up if you want to know about the coursework ...(wink..)
                                 </p>
@@ -129,7 +129,7 @@ export default function Journey(){
                                 icon={<AccountBalanceIcon />}
                             >
                                 <h3 className="vertical-timeline-element-title">High School Student</h3>
-                                <h4 className="vertical-timeline-element-subtitle">98.17%,Bharathi Vidya Bhavan</h4>
+                                <h5 className="vertical-timeline-element-subtitle">98.17%,Bharathi Vidya Bhavan</h5>
                                 <p>
                                     Sheer Luck!! Dont ask anything about this stuff
                                 </p>
