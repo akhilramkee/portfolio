@@ -2,9 +2,11 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import Work from '@material-ui/icons/Work';
+import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
+import BlockIcon from '@material-ui/icons/Block';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme)=>({
@@ -102,9 +104,40 @@ export default function Journey(){
                                     Helped develop an React Native app for providing news in a shorter span of words
                                 </p>
                             </VerticalTimelineElement>
+
+                            <VerticalTimelineElement
+                                className="vertical-timeline-element--work"
+                                date="June 2017 - Present"
+                                contentStyle={{ background: 'linear-gradient(to right, #d38312, #a83279)', color: '#fff' }}
+                                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                                icon={<AccountBalanceIcon />}
+                            >
+                                <h3 className="vertical-timeline-element-title">Software Engineering Student</h3>
+                                <h4 className="vertical-timeline-element-subtitle">CGPA 9.3,PSG College of Technology</h4>
+                                <p>
+                                    Hit me up if you want to know about the coursework ...(wink..)
+                                </p>
+                            </VerticalTimelineElement>
+
+                            <VerticalTimelineElement
+                                className="vertical-timeline-element--work"
+                                date="June 2015 - May 2017"
+                                contentStyle={{ background: 'linear-gradient(to right, #d38312, #a83279)', color: '#fff' }}
+                                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                                icon={<AccountBalanceIcon />}
+                            >
+                                <h3 className="vertical-timeline-element-title">High School Student</h3>
+                                <h4 className="vertical-timeline-element-subtitle">98.17%,Bharathi Vidya Bhavan</h4>
+                                <p>
+                                    Sheer Luck!! Dont ask anything about this stuff
+                                </p>
+                            </VerticalTimelineElement>
+
                             <VerticalTimelineElement
                                 iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                                icon={<Work />}
+                                icon={< BlockIcon/>}
                             />
                     </VerticalTimeline>
             </Grid>
