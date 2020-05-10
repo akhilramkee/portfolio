@@ -3,6 +3,7 @@ import Navigation from './components/nav.js';
 import FrontPage from './components/firstPage.js';
 import 'bootstrap/dist/css/bootstrap.css';
 import About from './components/about.js';
+import Skills from './components/skills.js';
 
 const Journey = lazy(()=>import('./components/journey.js'));
 
@@ -22,6 +23,7 @@ class App extends React.Component{
           <About />
           <Suspense fallback={<div className="lazy"></div>}>
             <Journey />
+            <Skills />
           </Suspense>
         </div>
       );

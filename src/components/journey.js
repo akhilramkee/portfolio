@@ -68,7 +68,7 @@ export default function Journey(){
             <Grid container spacing={5} direction="column" justify="center" alignItems="center">
                 <Grid item xs={12}>
                         <Paper className={classes.paper}>
-                        <Typography variant="h5" gutterBottom>
+                        <Typography variant="h5" gutterBottom>  
                                 My Journey...
                             </Typography>
                         </Paper>
